@@ -14,7 +14,7 @@ pipeline {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'test1', usernameVariable: 'DOCKERHUB_USERNAME', passwordVariable: 'DOCKERHUB_PASSWORD')]) {
                     echo "Logging in to Docker Hub..."
-                    sh "docker login -u cerli06 -p ilrec*2003"
+                    sh "docker login -u cerli18 -p ilrec*2003"
                 }
             }
         }
